@@ -1,0 +1,250 @@
+html
+{
+    background-color: #F5F5F5;
+    font-family: 'Raleway', cursive;
+}
+a
+{
+    text-decoration: none;
+    color: #2A7AE4;
+    font-weight: 700;
+    transition: 0.25s;
+    cursor: pointer;
+}
+a:active
+{
+    color: #464646;
+    transform: scale(1.05);
+}
+.main--diferencial
+{
+    margin: 0;
+    width: 100%;
+    height: auto;
+}
+.main--diferencial--imagen
+{
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.main--title
+{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.main--producto--precio
+{
+    margin: 0.5rem 0;
+    font-weight: 700;
+}
+.main--producto--titulo
+{
+    margin-top: 0.5rem;
+}
+/*Main Star Wars*/
+.main--starwars
+{
+    width: fit-content;
+    margin: 2rem auto;
+}
+.main--starwars--menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main--starwars--contenedor
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*Main Consoles*/
+.main--consoles
+{
+    width: fit-content;
+    margin: 2rem auto;
+}
+.main--consoles--menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main--consoles--contenedor
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*Main Diversos*/
+.main--diversos
+{
+    width: fit-content;
+    margin: 2rem auto;
+}
+.main--diversos--menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main--diversos--contenedor
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*Main Externos*/
+.main--externos
+{
+    width: fit-content;
+    margin: 2rem auto;
+}
+.main--externos--menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main--externos--contenedor
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem
+}
+.main--producto--imagen
+{
+    width: 176px;
+    height: 174px;
+}
+
+#link--starwars
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#link--consoles
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#link--diversos
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+#link--externos
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px)
+{
+    .main--starwars
+    {
+        margin: 1rem;
+    }
+    .main--title
+    {
+        font-size: 22px;
+    }
+    .main--starwars--producto
+    {
+        width: 156px;
+    }
+    img
+    {
+        width: 156px;
+    }
+    .main--consoles
+    {
+        margin: 1rem;
+    }
+    .main--consoles--producto
+    {
+        width: 156px;
+    }
+    .main--diversos
+    {
+        margin: 1rem;
+    }
+    .main--diversos--producto
+    {
+        width: 156px;
+    }
+    .main--externos
+    {
+        margin: 1rem;
+    }
+    .main--externo--producto
+    {
+        width: 156px;
+    }
+    .main--producto--imagen
+    {
+        width: 156px;
+        height: 174px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px) 
+{
+    .main--starwars
+    {
+        width: calc(164px + 164px + 164px + 164px + 3rem);
+    }
+    .main--starwars--producto
+    {
+        width: 164px;
+    }
+    .main--consoles
+    {
+        width: calc(164px + 164px + 164px + 164px + 3rem);
+    }
+    .main--consoles--producto
+    {
+        width: 164px;
+    }
+    .main--diversos
+    {
+        width: calc(164px + 164px + 164px + 164px + 3rem);
+    }
+    .main--diversos--producto
+    {
+        width: 164px;
+    }
+    .main--externos
+    {
+        width: calc(164px + 164px + 164px + 164px + 3rem);
+    }
+    .main--externo--producto
+    {
+        width: 164px;
+    }
+    img
+    {
+        width: 164px;
+    }
+    .main--producto--imagen
+    {
+        width: 164px;
+    }
+}

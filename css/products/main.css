@@ -1,0 +1,164 @@
+.main--products
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem 12rem;
+}
+.main--products--button
+{
+    font-family: 'Raleway';
+    font-size: 16px;
+    background-color: #2A7AE4;
+    color: #fff;
+    border-color: transparent;
+    outline: none;
+    height: 50px;
+    padding: 0 2rem;
+    width: fit-content;
+    transition: 0.5s;
+}
+.main--products--button:active
+{
+    border-color: #2A7AE4;
+    background-color: #fff;
+    color: #2A7AE4;
+}
+.main--externos--menu
+{
+    display: none;
+}
+
+@media screen and (max-width: 768px)
+{
+    .main--products
+    {
+        margin: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main--starwars 
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .main--starwars--contenedor
+    {
+        width: calc(156px + 156px + 1rem);
+    }
+    .main--consoles 
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .main--consoles--contenedor
+    {
+        width: calc(156px + 156px + 1rem);
+    }
+    .main--diversos 
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .main--diversos--contenedor
+    {
+        width: calc(156px + 156px + 1rem);
+    }
+    .main--externos
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin: 0;
+    }
+    .main--externos--contenedor
+    {
+        width: calc(156px + 156px + 1rem);
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1439px)
+{
+    .main--title
+    {
+        margin: 0;
+    }
+    .main--products
+    {
+        margin: 1rem 2rem;
+        align-items: center;
+    }
+    .main--starwars
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .main--starwars--contenedor
+    {
+        width: calc(164px + 164px + 164px + 164px + 3rem);
+    }
+    .main--starwars--producto
+    {
+        width: 164px;
+    }
+    .main--consoles
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .main--consoles--contenedor
+    {
+        width: calc(164px + 164px + 164px + 164px + 3rem);
+    }
+    .main--consoles--producto
+    {
+        width: 164px;
+    }
+    .main--diversos
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .main--diversos--contenedor
+    {
+        width: calc(164px + 164px + 164px + 164px + 3rem);
+    }
+    .main--diversos--producto
+    {
+        width: 164px;
+    }
+    .main--externos
+    {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .main--externos--contenedor
+    {
+        width: calc(164px + 164px + 164px + 164px + 3rem);
+    }
+    .main--externo--producto
+    {
+        width: 164px;
+    }
+    img
+    {
+        width: 164px;
+    }
+    .main--producto--imagen
+    {
+        width: 164px;
+    }
+}
