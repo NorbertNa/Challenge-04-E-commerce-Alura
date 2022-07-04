@@ -11,6 +11,23 @@ a
     transition: 0.25s;
     cursor: pointer;
 }
+.main--descripcion
+{
+    display: none;
+}
+.main--producto--link
+{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: 'Raleway';
+    text-decoration: none;
+    color: #2A7AE4;
+    font-weight: 700;
+    transition: 0.25s;
+    cursor: pointer;
+}
 a:active
 {
     color: #464646;
@@ -20,13 +37,53 @@ a:active
 {
     margin: 0;
     width: 100%;
-    height: auto;
+    height: 352px;
+    background-image: url('../assets/Hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
-.main--diferencial--imagen
+.main--diferencial--contenedor--fix
 {
-    width: 100%;
-    height: auto;
-    margin: 0;
+    height: calc(100% - 2rem);
+}
+.main--diferencial--contenedor
+{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12rem;
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+.main--diferencial--titulo
+{
+    font-weight: 700;
+    font-size: 22px;
+    color: #F5F5F5;
+}
+.main--diferencial--texto
+{
+    font-size: 16px;
+    color: #F5F5F5;
+}
+.main--diferencial--boton
+{
+    color: #F5F5F5;
+    background-color: #2A7AE4;
+    font-size: 16px;
+    border-color: #2A7AE4;
+    outline: none;
+    height: 50px;
+    width: 130px;
+    transition: 0.5s;
+}
+.main--diferencial--boton:active
+{
+    color: #2A7AE4;
+    background-color: #F5F5F5;
 }
 .main--title
 {
@@ -159,6 +216,10 @@ a:active
 
 @media screen and (max-width: 768px)
 {
+    .main--diferencial
+    {
+        height: 192px;
+    }
     .main--starwars
     {
         margin: 1rem;
@@ -204,6 +265,10 @@ a:active
         width: 156px;
         height: 174px;
     }
+    .main--diferencial--contenedor
+    {
+        margin-left: 1rem;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1439px) 
 {
@@ -246,5 +311,9 @@ a:active
     .main--producto--imagen
     {
         width: 164px;
+    }
+    .main--diferencial--contenedor
+    {
+        margin-left: 2rem;
     }
 }

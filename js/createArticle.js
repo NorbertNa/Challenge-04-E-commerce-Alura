@@ -60,14 +60,31 @@ function createArticle(article)
         articuloPrecio.innerHTML = "$" + article.Precio;
         articuloPrecio.classList.add('main--producto--precio');
 
-        const link = document.createElement('a');
+        const articuloDescipcion = document.createElement('p');
+        articuloDescipcion.innerHTML = article.Description;
+        articuloDescipcion.classList.add('main--descripcion');
+
+        const link = document.createElement('button');
+        link.classList.add('main--producto--link--externos');
+        link.classList.add('main--producto--link');
+        link.setAttribute('onclick', "window.location.href='singleProduct.html';")
         link.innerHTML = "Ver detalles";
 
     espacioArticulo.appendChild(articuloImagen);
     espacioArticulo.appendChild(articuloNombre);
     espacioArticulo.appendChild(articuloPrecio);
     espacioArticulo.appendChild(link);
-    console.log(espacioArticulo);
 
     espacioParaArticulosExternos.appendChild(espacioArticulo);
 }
+
+const externos = document.querySelectorAll('.main--producto--link--externos');
+
+for (var i = 0; i < externos.length; i++)
+{
+    externos[i].addEventListener('click', () => 
+    {
+        elementoADetallar = event.composedPath()[1];
+        localStorage.setItem('articuloDetail', (elementoADetallar.outerHTML));
+    })
+};

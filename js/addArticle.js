@@ -24,8 +24,7 @@ botonArticle.addEventListener('click', () =>
     }
 
     listaArticulos.push(elementosArticulo);
-    console.log(listaArticulos);
-
+    
     for (var i = 0; i < (listaArticulos.length - 1); i++)
     {
         if (listaArticulos[i].url == "" || listaArticulos[i].Category == "" || listaArticulos[i].Nombre == "" || listaArticulos[i].Description == "")  
