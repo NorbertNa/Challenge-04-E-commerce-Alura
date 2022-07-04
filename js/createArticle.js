@@ -73,6 +73,7 @@ function createArticle(article)
     espacioArticulo.appendChild(articuloImagen);
     espacioArticulo.appendChild(articuloNombre);
     espacioArticulo.appendChild(articuloPrecio);
+    espacioArticulo.appendChild(articuloDescipcion);
     espacioArticulo.appendChild(link);
 
     espacioParaArticulosExternos.appendChild(espacioArticulo);
